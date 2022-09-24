@@ -1,0 +1,32 @@
+[
+    {
+      "precio": 100,
+      "id": 1,
+      "title": "Accesorios para Perros"
+    },
+    {
+      "precio": 200,
+      "id": 2,
+      "title": "Accesorios para Gatos"
+    },
+    {
+      "precio": 300,
+      "id": 3,
+      "title": "Accesorios para Peces"
+    },
+    {
+      "precio": 400,
+      "id": 4,
+      "title": "Accesorios para Roedores"
+    },
+    {
+      "precio": 500,
+      "id": 5,
+      "title": "Accesorios para Reptiles"
+    },
+    {
+      "precio": 600,
+      "id": 6,
+      "title": "Accesorios para Aves"
+    }
+  ]

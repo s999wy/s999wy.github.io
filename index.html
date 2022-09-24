@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <title>No-PetShop</title>
+</head>
+<body>
+<!-- Navbar -->
+<header>
+    <img class="logo" src="" alt="logo">
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Buscar</a></li>
+        </ul>
+    </nav>
+    <a class="account" href="#"><button class="btn1">Cuenta</button></a>
+</header>
+
+<!-- Navbar -->
+
+                <!-- MAIN -->
+    <div class="container ">
+        <h1 class="text-center">Catalogo</h1>
+        <hr>
+        <div class="row" id="cards"></div>
+    </div>
+
+    <template id="template-card" >
+        <div class="col-12 mb-3 col-md-2">
+          <div class="card border-info mb-3" style="max-width: 18rem;">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>precio</p>
+              <button class="btn btn-outline-secondary">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <div class="container col-md-5">
+        <h4 class="text-center">Carrito de compras</h4>
+        <table class="table table-success table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">#</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot>
+            <tr id="footer">
+              <th scope="row" colspan="5">...</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+
+
+      <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-outline-danger btn-sm" id="vaciar-carrito">
+                Borrar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-outline-success btn-sm">
+                +
+            </button>
+            <button class="btn btn-outline-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+    <template id="template-card">
+      <div class="col-12 mb-2">
+        <div class="card">
+          <div class="card-body">
+            <h5>Titulo</h5>
+            <p>precio</p>
+            <button class="btn btn-dark">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+                <!-- MAIN -->
+
+<!-- Footer -->
+
+<footer class="contentFooter">
+    <hr>
+    <div class="suscripcion">
+        <h1>Suscribete</h1>
+        <p>Ingrtesa tu email para recibir...</p>
+        <form action="">
+            <input type="text" placeholder="E-mail">
+            <button class="btn1">Suscribete</button>
+        </form>
+    </div>
+    <hr>
+    <div class="mainFooter">
+        <div>
+            <h2>No-PetShop</h2>
+        </div>
+        <div>
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="./pages/perros.html">Perros</a></li>
+                <li><a href="./pages/gatos.html">Gatos</a></li>
+                <li><a href="./pages/roedores.html">Roedores</a></li>
+                <li><a href="./pages/reptiles.html">Reptiles</a></li>
+                <li><a href="./pages/aves.html">Aves</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Nosotros</h2>
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Social</h2>
+            <li><a href="#"><i>"Twitter"</i></a></li>
+            <li><a href="#"><i>"Facebook"</i></a></li>
+            <li><a href="#"><i>"Instagram"</i></a></li>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Footer -->
+
+        <!-- JS -->
+<script src="./main.js"></script>
+</body>
+</html>

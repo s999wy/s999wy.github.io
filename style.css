@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+li, a, button {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all .3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9
+}
+
+button {
+    padding: 9px 25px;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: whitesmoke;
+}
+
+
+.content {
+    height: 70vh;
+}
+
+footer {
+    color: #0088a9;
+    width: 80%;
+    margin: auto;
+}
+
+.suscripcion {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+input {
+    padding: 8px 10px;
+    background-color: white;
+    border: 1px solid #0088a9;
+    width: 50%;
+    outline: none;
+    color: #0088a9;
+}
+
+.btn1 {
+    color: #0088a9;
+    background-color: white;
+    outline: none;
+    border: 1px solid #0088a9;
+    padding: 9px 25px;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #0088a9;
+    color: white;
+}
+
+footer p {
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+a {
+    color:#73af9b;
+}
+
+a:hover {
+    opacity: 1;
+    color: orange;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.mainFooter {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 2rem;
+}
+
+footer i {
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.producto {
+    max-width: 20%;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
