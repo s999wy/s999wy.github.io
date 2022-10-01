@@ -1,165 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <title>No-PetShop</title>
-</head>
-<body>
-<!-- Navbar -->
-<header>
-    <img class="logo" src="" alt="logo">
-    <nav>
-        <ul class="nav__links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Buscar</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NO-PET</title>
+
+<!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+<!--ICONOS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+<!--NAV-->
+    <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+					<h1>NO-PET <span>SHOP</span></h1>
+				</div>
+				<ul class="nav__list">
+					<div class="carrito__icon">
+						<i class="bx bx-cart"></i>
+						<span class="item__total">0</span>
+					</div>
+				</ul>
+      </div>
     </nav>
-    <a class="account" href="#"><button class="btn1">Cuenta</button></a>
-</header>
 
-<!-- Navbar -->
-
-                <!-- MAIN -->
-    <div class="container ">
-        <h1 class="text-center">Catalogo</h1>
-        <hr>
-        <div class="row" id="cards"></div>
-    </div>
-
-    <template id="template-card" >
-        <div class="col-12 mb-3 col-md-2">
-          <div class="card border-info mb-3" style="max-width: 18rem;">
-            <img src="" alt="" class="card-img-top">
-            <div class="card-body">
-              <h5>Titulo</h5>
-              <p>precio</p>
-              <button class="btn btn-outline-secondary">Comprar</button>
-            </div>
-          </div>
+<!--CATEGORIAS-->
+    <section class="filter">
+      <div class="grid">
+        <div class="category">
+          <select id="category" onclick="categoryValue()">
+            <option value="">Categorias</option>
+            <option value="perros">Perros </option>
+            <option value="gatos">Gatos</option>
+            <option value="peces">Peces</option>
+            <option value="roedores">Roedores</option>
+            <option value="reptiles">Reptiles</option>
+            <option value="aves">Aves</option>
+          </select>
         </div>
-      </template>
-
-      <div class="container col-md-5">
-        <h4 class="text-center">Carrito de compras</h4>
-        <table class="table table-success table-bordered">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Item</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">#</th>
-              <th scope="col">Total</th>
-            </tr>
-          </thead>
-          <tbody id="items"></tbody>
-          <tfoot>
-            <tr id="footer">
-              <th scope="row" colspan="5">...</th>
-            </tr>
-          </tfoot>
-        </table>
       </div>
+    </section>
 
+<!--PRODUCTOS-->
+    <section class="productos">
+      <div class="productos__center">
+      </div>
+    </section>
 
-
-      <template id="template-footer">
-        <th scope="row" colspan="2">Total productos</th>
-        <td>10</td>
-        <td>
-            <button class="btn btn-outline-danger btn-sm" id="vaciar-carrito">
-                Borrar todo
-            </button>
-        </td>
-        <td class="font-weight-bold">$ <span>5000</span></td>
-    </template>
+<!--CARRITO-->
     
-    <template id="template-carrito">
-      <tr>
-        <th scope="row">id</th>
-        <td>Café</td>
-        <td>1</td>
-        <td>
-            <button class="btn btn-outline-success btn-sm">
-                +
-            </button>
-            <button class="btn btn-outline-danger btn-sm">
-                -
-            </button>
-        </td>
-        <td>$ <span>500</span></td>
-      </tr>
-    </template>
+    <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Productos</h1>
 
-    <template id="template-card">
-      <div class="col-12 mb-2">
-        <div class="card">
-          <div class="card-body">
-            <h5>Titulo</h5>
-            <p>precio</p>
-            <button class="btn btn-dark">Comprar</button>
-          </div>
+        <div class="carrito__center">
+        </div>
+
+        <div class="carrito__footer">
+            <h3>Total: $ <span class="carrito__total">0</span></h3>
+            <button class="clear__carrito btn">Eliminar productos</button>
         </div>
       </div>
-    </template>
+    </section>
+<!-- Footer -->
 
-                <!-- MAIN -->
+    <footer class="contentFooter">
+      <hr>
+      <div class="suscripcion">
+          <h1>Suscribete</h1>
+          <p>Ingresa tu email para recibir...</p>
+          <form action="">
+              <input type="text" placeholder="E-mail">
+              <button class="btn1">Suscribete</button>
+          </form>
+      </div>
+      <hr>
+      <div class="mainFooter">
+          <div>
+              <h2>Nosotros</h2>
+              <ul>
+                  <li><a href="#">Sobre nosotros</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contacto</a></li>
+              </ul>
+          </div>
+          <div>
+              <h2>Social</h2>
+              <li><a href="#"><i>"Twitter"</i></a></li>
+              <li><a href="#"><i>"Facebook"</i></a></li>
+              <li><a href="#"><i>"Instagram"</i></a></li>
+          </div>
+
+      </div>
+
+    </footer>
 
 <!-- Footer -->
 
-<footer class="contentFooter">
-    <hr>
-    <div class="suscripcion">
-        <h1>Suscribete</h1>
-        <p>Ingrtesa tu email para recibir...</p>
-        <form action="">
-            <input type="text" placeholder="E-mail">
-            <button class="btn1">Suscribete</button>
-        </form>
-    </div>
-    <hr>
-    <div class="mainFooter">
-        <div>
-            <h2>No-PetShop</h2>
-        </div>
-        <div>
-            <h2>Categorias</h2>
-            <ul>
-                <li><a href="./pages/perros.html">Perros</a></li>
-                <li><a href="./pages/gatos.html">Gatos</a></li>
-                <li><a href="./pages/roedores.html">Roedores</a></li>
-                <li><a href="./pages/reptiles.html">Reptiles</a></li>
-                <li><a href="./pages/aves.html">Aves</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Nosotros</h2>
-            <ul>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Social</h2>
-            <li><a href="#"><i>"Twitter"</i></a></li>
-            <li><a href="#"><i>"Facebook"</i></a></li>
-            <li><a href="#"><i>"Instagram"</i></a></li>
-        </div>
-
-    </div>
-
-</footer>
-
-<!-- Footer -->
-
-        <!-- JS -->
-<script src="./main.js"></script>
-</body>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>

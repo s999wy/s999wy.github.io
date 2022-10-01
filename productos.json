@@ -1,0 +1,49 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Accesorios para Perros",
+            "price": 100,
+            "image": "https://naturapetshop.cl/wp-content/uploads/2021/05/HTB1pDeBmIIrBKNjSZK9q6ygoVXau.jpg",
+            "category": "perros"
+        },
+        {
+            "id": 2,
+            "title": "Accesorios para Gatos",
+            "price": 125,
+            "image": "https://naturapetshop.cl/wp-content/uploads/2021/07/HTB19OHmJVmWBuNjSspdq6zugXXak.jpg",
+            "category": "gatos"
+        },
+        {
+            "id": 3,
+            "title": "Accesorios para Peces",
+            "price": 150,
+            "image": "https://naturapetshop.cl/wp-content/uploads/2021/07/HTB1Isl1PpXXXXXvaXXXq6xXFXXXf.jpg",
+            "category": "peces"
+        },
+        {
+            "id": 4,
+            "title": "Accesorios para Roedores",
+            "price": 175,
+            "image": "https://naturapetshop.cl/wp-content/uploads/2021/07/Hfef6901dff214463805a17e1c3b0c903H.jpg",
+            "category": "roedores"
+        },
+        {
+            "id": 5,
+            "title": "Accesorios para Reptiles",
+            "price": 200,
+            "image": "https://naturapetshop.cl/wp-content/uploads/2021/05/HTB1nj3dJ25TBuNjSspmq6yDRVXay.jpg",
+            "category": "reptiles"
+
+        },
+        {
+            "id": 6,
+            "title": "Accesorios para Aves",
+            "price": 215,
+            "image": "https://naturapetshop.cl/wp-content/uploads/2021/05/HTB1AeciJ7OWBuNjSsppq6xPgpXa5.jpg",
+            "category": "aves"
+
+        }
+ 
+    ]
+}
