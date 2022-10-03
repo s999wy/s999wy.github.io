@@ -4,7 +4,7 @@
     --main: #73af9b;
     --white: #fff;
     --azul: #0088a9;
-    --amarillo: #000;
+    --black: #000;
     --rojo: red;
 }
 *,
@@ -84,7 +84,7 @@ li{
     color: var(--white);
 }
 .nav__logo span{
-    color: var(--amarillo);
+    color: var(--black);
 }
 .nav__list{
     display: flex;
@@ -104,7 +104,7 @@ li{
 .carrito__icon i{
     margin-top: .6rem;
     font-size: 3.5rem;
-    color: var(--amarillo);
+    color: var(--black);
 }
 .carrito__icon span{
     position: absolute;
@@ -124,7 +124,7 @@ li{
 /* PRODUCTOS */
 .rating span{
     font-size: 2rem;
-    color: var(--amarillo);
+    color: var(--black);
 }
 .productos{
     padding: 5rem 0;

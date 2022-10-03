@@ -59,7 +59,7 @@ class UI {
           <div class="bottom">
             <div class="btn__group">
               <button class="btn addToCart" data-id=${producto.id}>Añadir carrito</button>
-              <a href="producto-detalles.html?id=${producto.id}" class="btn view">Vista</a>
+              <a href="producto-detalles.html?id=${producto.id}" class="btn view">Detalles</a>
             </div>
           </div>
         </div>
@@ -85,19 +85,12 @@ class UI {
 				e.target.disabled = true;
 				
 
-				// GET productos al carrito
+
 				const carritoItem = {...Storage.getProductos(id), cantidad: 1}
-
-				//agregamos el producto al carrito
 				carrito = [...carrito, carritoItem]
-
-				//Guardamos el carrito al localstorage
 				Storage.saveCart(carrito)
-
-				//Set cart values
 				this.setItemValues(carrito)
 				this.addCarritoItem(carritoItem)
-				//Show al carrito
 			})
 		})
 	}
