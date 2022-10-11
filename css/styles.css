@@ -130,10 +130,10 @@ li{
     padding: 5rem 0;
 }
 .productos__center{
-    padding: 0 3rem;
+    padding:  3rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 3rem 1rem;
 }
 .producto{
