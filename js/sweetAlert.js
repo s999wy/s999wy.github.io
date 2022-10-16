@@ -1,4 +1,4 @@
- 
+ /*ALERTA BIENVENIDA*/
 
   Swal.fire({
     title: 'Bienvenidos a NO-PET SHOP',

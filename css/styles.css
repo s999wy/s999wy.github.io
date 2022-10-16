@@ -3,9 +3,9 @@
 :root{
     --main: #73af9b;
     --white: #fff;
-    --azul: #0088a9;
+    --blue: #0088a9;
     --black: #000;
-    --rojo: red;
+    --red: red;
 }
 *,
 *::before,
@@ -15,55 +15,55 @@
     box-sizing: inherit;
 }
 
-html{
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-body{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--main);
-    background-color: var(--white);
-}
+/* ======= HTML BASE ======= */
 
-li, a, button {
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-}
-
-h2,
-h3,
-h4{
-    font-weight: 400;
-}
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
-a{
-    text-decoration: none;
-}
-ul,
-li{
-    list-style: none;
-}
-.container{
-    max-width: 114rem;
-    margin: 0 auto;
-    padding: 0 1.6rem;
-}
-@media only screen and (max-width: 1200px){
-    .container{
-        padding: 0 3rem;
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
     }
-}
-@media only screen and (max-width: 768px){
-    .container{
-        padding: 0 5rem;
+    body{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--main);
+        background-color: var(--white);
     }
-}
 
-/* NAVIGATION */
+    li, a, button {
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+
+    h2, h3, h4{
+        font-weight: 400;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul,
+    li{
+        list-style: none;
+    }
+    .container{
+        max-width: 114rem;
+        margin: 0 auto;
+        padding: 0 1.6rem;
+    }
+    @media only screen and (max-width: 1200px){
+        .container{
+            padding: 0 3rem;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .container{
+            padding: 0 5rem;
+        }
+    }
+
+/* ======= NAV ======= */
 .nav{
     position: fixed;
     top: 0;
@@ -97,6 +97,9 @@ li{
     margin-right: 2rem;
     color: rgba(219, 216, 39, 0.541);
 }
+
+/* ======= ICONOS CARRITO ======= */
+
 .carrito__icon{
     position: relative;
     cursor: pointer;
@@ -113,7 +116,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--rojo);
+    background-color: var(--blue);
     color: var(--white);
     padding: .5rem;
     font-size: 1.5rem;
@@ -121,7 +124,7 @@ li{
     border-radius: 50%;
 }
 
-/* PRODUCTOS */
+/* ======= PRODUCTOS ======= */
 .rating span{
     font-size: 2rem;
     color: var(--black);
@@ -175,9 +178,9 @@ li{
     transition: all 300ms ease-in-out;
 }
 .btn:hover{
-    background-color: var(--azul);
+    background-color: var(--blue);
     color: var(--white);
-    border: 1px solid var(--azul);
+    border: 1px solid var(--blue);
 }
 .price{
     font-weight: 700;
@@ -185,7 +188,7 @@ li{
 }
 
 
-
+/* ======= CARRITO ======= */
 .carrito__overlay{
     position: fixed;
     top: 0;
@@ -207,7 +210,7 @@ li{
     padding: 1.6rem;
     border-radius: 2rem;
     overflow-x: scroll;
-    background-color: #f2f2f2;
+    background-color: var(--white);
      opacity: 0; 
      visibility: hidden; 
     transform: all 300ms ease-in-out;
@@ -227,7 +230,7 @@ li{
     transform: all 300ms ease-in-out;
 }
 .carrito .close__carrito:hover{
-    color: var(--rojo);
+    color: var(--red);
 }
 .carrito__item span{
     font-size: 2rem;
@@ -253,19 +256,19 @@ li{
     cursor: pointer;
 }
 .carrito__item img{
-    width: 9rem;
+    width: 6rem;
 }
 .carrito__iem h3{
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
 .carrito__item .price{
-    color: var(--azul);
+    color: var(--blue);
     font-weight: 700;
 }
 .carrito__item .remove__item{
     cursor: pointer;
-    color: var(--rojo);
+    color: var(--red);
     font-size: 4rem;
 }
 .carrito__footer{
@@ -304,6 +307,8 @@ li{
     }
 }
 
+
+/* ======= BUSQUEDA CATEGORIAS ======= */
 
 .filter{
     padding: 0 2rem;
@@ -357,7 +362,7 @@ li{
     }
 }
 
-/* Detalles */
+/* ======= DETALLES PRODUCTOS ======= */
 .detalles{
     height: 100vh;
     display: flex;
@@ -383,7 +388,7 @@ li{
     text-transform: uppercase;
 }
 .detalles-content .precio span{
-    color: var(--azul);
+    color: var(--blue);
     font-size: 2rem;
     font-weight: 600;
 }
@@ -398,6 +403,9 @@ li{
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ======= FOOTER ======= */
 
 footer {
     color: var(--main);

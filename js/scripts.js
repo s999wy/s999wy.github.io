@@ -1,3 +1,5 @@
+/*CONSTANTES*/
+
 const productoDOM = document.querySelector(".productos__center")
 const carritoDOM = document.querySelector(".carrito")
 const carritoCenter = document.querySelector(".carrito__center")
@@ -11,6 +13,9 @@ const detalles = document.getElementById('detalles')
 
 let carrito = [];
 let buttonDOM = [];
+
+
+/*DETALLE PRODUCTOS*/
 
 class UI {
 
@@ -87,6 +92,7 @@ class UI {
 
 
 				const carritoItem = {...Storage.getProductos(id), cantidad: 1}
+
 				carrito = [...carrito, carritoItem]
 				Storage.saveCart(carrito)
 				this.setItemValues(carrito)
